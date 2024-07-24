@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 
-import { getImageUrl } from "../utils";
+import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
   return (
@@ -18,13 +18,13 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="">Home</a>
+            <a href="">HOME</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="">BLOG</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="">CONTACT</a>
           </li>
         </ul>
       </div>

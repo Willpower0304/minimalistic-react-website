@@ -1,10 +1,10 @@
-@import "../vars.css";
+@import "../../vars.css";
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  margin: 2rem 3rem;
 }
 
 .container .leftcontainer ul {
@@ -19,7 +19,12 @@
   text-decoration: none;
   color: rgb(82, 82, 82);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.container .leftcontainer a:hover {
+  color: rgb(158, 158, 158);
 }
 
 .container .leftcontainer .imglogo {
