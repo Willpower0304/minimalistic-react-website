@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .container {
+  max-width: 60ch;
   display: flex;
   flex-direction: column;
   margin: 14.1rem 3rem;

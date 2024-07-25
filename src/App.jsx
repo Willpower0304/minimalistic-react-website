@@ -9,8 +9,8 @@ function App() {
       <div className={styles.App}>
         <Navbar />
         <Hero />
+        <Blog />
       </div>
-      <Blog />
     </>
   );
 }
