@@ -1,14 +1,15 @@
 @import "../../vars.css";
 
 .container {
-  max-width: 60ch;
   display: flex;
   flex-direction: column;
   margin: 14.1rem 3rem;
 }
 
 .container .title {
-  font-size: 10rem;
+  display: flex;
+  flex-shrink: 1;
+  font-size: 11vw;
   color: #3e3b3b;
 }
 
@@ -16,4 +17,12 @@
   font-size: 2rem;
   color: #989797;
   margin: 0 0.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }

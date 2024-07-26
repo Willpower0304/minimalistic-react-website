@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
 import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className={styles.container}>
       <div className={styles.leftcontainer}>
         <ul>
-          <li>
-            <a href="">
-              <img
-                className={styles.imglogo}
-                src={getImageUrl("nav/logo.svg")}
-                alt="logo"
-              />
-            </a>
-          </li>
+          <a href="">
+            <img
+              className={styles.imglogo}
+              src={getImageUrl("nav/logo.svg")}
+              alt="logo"
+            />
+          </a>
           <li>
             <a href="">HOME</a>
           </li>
@@ -29,9 +29,10 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className={styles.rightcontainer}>
-        <a href="">
-          <i className="fa-solid fa-bars"></i>
-        </a>
+        <i
+          className={menuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+          onClick={() => setMenuOpen(!menuOpen)}
+        ></i>
       </div>
     </nav>
   );
