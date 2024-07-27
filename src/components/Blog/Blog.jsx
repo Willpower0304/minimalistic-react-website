@@ -5,18 +5,16 @@ import { getImageUrl } from "../../utils";
 export const Blog = () => {
   return (
     <section className={styles.container} id="Blog">
-      <h2 className={styles.title}>About Our Blog</h2>
-      <p className={styles.info}>
-        Welcome to Minimalism, where is a way of life is not just a slogan but a
-        guiding principle. Our website is dedicated to helping you embrace
-        simplicity and intentional living. Here, you´ll find resources, tips,
-        and community support to declutter your mind, home, and life.
-      </p>
+      <div className={styles.titlesContainer}>
+        <p className={styles.miniTitle}>BLOG</p>
+        <hr />
+        <h2 className={styles.title}>ABOUT US</h2>
+      </div>
       <div className={styles.infoSection}>
         <div className={styles.infoContainer}>
           <img
             className={styles.imgBox}
-            src={getImageUrl("blog/inpired.jpg")}
+            src={getImageUrl("blog/inspired.jpg")}
           ></img>
           <h3 className={styles.titleinfo}>Be Inpired</h3>
           <p className={styles.pinfo}>

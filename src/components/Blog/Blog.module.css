@@ -3,20 +3,38 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 5rem 3rem;
+  padding: 7rem 3rem;
   text-align: center;
-  row-gap: 10px;
+  background-color: #fdfdfd;
+}
+
+.container .titlesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.container .titlesContainer hr {
+  margin-top: 0.5rem;
+  width: 2.2rem;
+  height: 3px;
+  outline: none;
+  border: 1px solid #b9b9b9;
+  background-color: #b9b9b9;
+}
+
+.container .miniTitle {
+  font-size: 0.8rem;
+  color: #585858;
+  font-weight: 600;
 }
 
 .container .title {
+  margin-top: 2rem;
   font-size: 3rem;
   color: #3e3b3b;
-}
-
-.container .info {
-  max-width: 70ch;
-  color: #585858;
 }
 
 .container .infoSection {
@@ -27,7 +45,7 @@
   text-align: left;
   width: 100%;
   row-gap: 50px;
-  column-gap: 50px;
+  column-gap: 30px;
 }
 
 .container .infoSection .infoContainer .imgBox {
@@ -39,23 +57,26 @@
 .container .infoSection .infoContainer .titleinfo {
   text-align: center;
   font-size: 1.5rem;
-  margin: 0.5rem 0 1rem;
+  margin: 1rem 0 1rem;
   color: #3e3b3b;
 }
 
 .container .infoSection .infoContainer .pinfo {
   max-width: 40ch;
   margin: 0 1.5rem;
-  color: #585858;
+  color: #808080;
 }
 
 .container .boton {
+  width: fit-content;
+  align-items: center;
+  align-self: center;
   padding: 1rem 2rem;
   font-weight: 700;
-  color: #777777;
+  color: #4b4b4b;
   background-color: transparent;
   outline: none;
-  border: 2px solid #777777;
+  border: 2px solid #b6b6b6;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in;
