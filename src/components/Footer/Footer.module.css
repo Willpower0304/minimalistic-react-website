@@ -1,0 +1,15 @@
+@import "../../vars.css";
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .containerCenter .img {
+  width: 35px;
+  height: 35px;
+}
