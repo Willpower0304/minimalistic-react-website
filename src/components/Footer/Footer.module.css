@@ -4,12 +4,39 @@ footer {
   display: flex;
   background-color: black;
   color: white;
-  padding: 1rem 3rem;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2rem 3rem;
+  justify-content: center;
+  flex-flow: row wrap;
+  column-gap: 12rem;
+  row-gap: 1rem;
 }
 
-footer .containerCenter .img {
-  width: 35px;
-  height: 35px;
+.containerLeft {
+  max-width: 30ch;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #808080;
+  text-align: center;
+}
+
+.containerRight {
+  display: flex;
+  column-gap: 50px;
+  font-size: 1.2rem;
+  color: #808080;
+}
+
+.containerRight i {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.containerRight i:hover {
+  color: #adadad;
+}
+
+@media screen and (max-width: 768px) {
+  .containerRight {
+    font-size: 1rem;
+  }
 }

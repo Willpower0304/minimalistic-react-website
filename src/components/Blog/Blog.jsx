@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Blog.module.css";
+import { getImageUrl } from "../../utils";
 
 export const Blog = () => {
   return (
@@ -13,7 +14,10 @@ export const Blog = () => {
       </p>
       <div className={styles.infoSection}>
         <div className={styles.infoContainer}>
-          <i className="fa-solid fa-tree"></i>
+          <img
+            className={styles.imgBox}
+            src={getImageUrl("blog/inpired.jpg")}
+          ></img>
           <h3 className={styles.titleinfo}>Be Inpired</h3>
           <p className={styles.pinfo}>
             Discover a world of possibilities with Minimalism. Our inspiring
@@ -22,7 +26,10 @@ export const Blog = () => {
           </p>
         </div>
         <div className={styles.infoContainer}>
-          <i className="fa-solid fa-layer-group"></i>
+          <img
+            className={styles.imgBox}
+            src={getImageUrl("blog/group.jpg")}
+          ></img>
           <h3 className={styles.titleinfo}>Get Connected</h3>
           <p className={styles.pinfo}>
             Join a community of like-minded individuals on Minimalism. Connect
@@ -31,7 +38,10 @@ export const Blog = () => {
           </p>
         </div>
         <div className={styles.infoContainer}>
-          <i className="fa-solid fa-briefcase"></i>
+          <img
+            className={styles.imgBox}
+            src={getImageUrl("blog/tools.jpg")}
+          ></img>
           <h3 className={styles.titleinfo}>Equip Yourself</h3>
           <p className={styles.pinfo}>
             Minimalism provides you with the tools and resources you need to
@@ -40,9 +50,7 @@ export const Blog = () => {
           </p>
         </div>
       </div>
-      <a href="#" className={styles.link}>
-        View More
-      </a>
+      <button className={styles.boton}>VIEW MORE</button>
     </section>
   );
 };
