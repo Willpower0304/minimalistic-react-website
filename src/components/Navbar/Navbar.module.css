@@ -1,14 +1,26 @@
 @import "../../vars.css";
 
 .container {
-  position: relative;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 3rem;
+  padding: 2rem 3rem;
+  transition: 0.6s;
+  z-index: 2;
 }
 
-.container .leftcontainer ul {
+.container.sticky {
+  padding: 1rem 3rem;
+  background: black;
+}
+
+.container.sticky .rightcontainer a {
+  color: white;
+}
+
+.container .rightcontainer ul {
   list-style: none;
   display: flex;
   gap: 5rem;
@@ -16,7 +28,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.container .leftcontainer a {
+.container .rightcontainer a {
   font-family: var(--font-roboto);
   text-decoration: none;
   color: rgb(82, 82, 82);
@@ -25,7 +37,7 @@
   transition: all 0.2s ease-in;
 }
 
-.container .leftcontainer a:hover {
+.container .rightcontainer a:hover {
   color: rgb(158, 158, 158);
 }
 
@@ -37,6 +49,7 @@
 }
 
 .container .rightcontainer i {
+  display: none;
   color: white;
   cursor: pointer;
   background-color: black;
@@ -45,7 +58,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container .leftcontainer li {
+  .container .rightcontainer ul {
     display: none;
+  }
+
+  .container .rightcontainer i {
+    display: block;
   }
 }
