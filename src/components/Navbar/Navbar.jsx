@@ -24,7 +24,7 @@ export const Navbar = () => {
         <a href="">
           <img
             className={styles.imglogo}
-            src={getImageUrl("nav/logo.svg")}
+            src={getImageUrl("nav/title.logo.svg")}
             alt="logo"
           />
         </a>
@@ -35,7 +35,7 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         ></i>
         <ul
-          className={`${menuOpen && styles.menuOpen}`}
+          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(true)}
         >
           <li>

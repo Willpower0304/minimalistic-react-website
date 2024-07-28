@@ -20,6 +20,10 @@
   color: white;
 }
 
+.container.sticky .rightcontainer i {
+  color: white;
+}
+
 .container .rightcontainer ul {
   list-style: none;
   display: flex;
@@ -50,19 +54,40 @@
 
 .container .rightcontainer i {
   display: none;
-  color: white;
-  cursor: pointer;
-  background-color: black;
-  border-radius: 50%;
+  font-size: 1.5rem;
   padding: 0.6rem;
 }
 
 @media screen and (max-width: 768px) {
-  .container .rightcontainer ul {
+  .container .rightcontainer .menuItems {
     display: none;
+    flex-direction: column;
+    gap: 3rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    padding: 3rem 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
   }
 
   .container .rightcontainer i {
     display: block;
+  }
+
+  .rightcontainer a {
+    color: white;
+    padding: 1rem 1rem;
+  }
+
+  .rightcontainer a:hover {
+    color: white;
   }
 }
